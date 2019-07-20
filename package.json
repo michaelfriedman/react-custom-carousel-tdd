@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll --coverage",
     "lint": "eslint && prettier-eslint --list-different **/*.js",
     "format": "prettier-eslint --write **/*.js"
   },
