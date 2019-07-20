@@ -1,0 +1,9 @@
+{
+  "name": "react-custom-carousel-tdd",
+  "version": "0.1.0",
+  "description": "React carousel, fully test driven ",
+  "main": "index.js",
+  "author": "Michael Friedman <contact@michaeldavidfriedman.com>",
+  "license": "MIT",
+  "private": true
+}
