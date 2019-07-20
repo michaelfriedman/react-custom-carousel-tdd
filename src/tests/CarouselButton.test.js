@@ -2,7 +2,6 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import CarouselButton from '../CarouselButton';
-import { executionAsyncId } from 'async_hooks';
 
 configure({ adapter: new Adapter() });
 
