@@ -85,14 +85,13 @@ describe('Carousel', () => {
         expect(wrapper.state('slideIndex')).toBe(0);
       });
     });
-  });
-
-  it('renders the current slide as a CarouselSlide', () => {
-    let slideProps;
-    slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[0]);
-    wrapper.setState({ slideIndex: 1 });
-    slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[1]);
+    it('renders the current slide as a CarouselSlide', () => {
+      let slideProps;
+      slideProps = wrapper.find(CarouselSlide).props();
+      expect(slideProps).toEqual(slides[0]);
+      wrapper.setState({ slideIndex: 1 });
+      slideProps = wrapper.find(CarouselSlide).props();
+      expect(slideProps).toEqual(slides[1]);
+    });
   });
 });
