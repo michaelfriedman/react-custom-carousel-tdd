@@ -9,17 +9,17 @@ describe('Carousel', () => {
   const slides = [
     {
       imgUrl: 'https://placekitten.com/200/300',
-      description: 'Side 1',
+      description: 'Slide 1',
       attribution: 'Uno Pizzeria Kitty',
     },
     {
       imgUrl: 'https://placekitten.com/200/300',
-      description: 'Side 2',
+      description: 'Slide 2',
       attribution: 'Dos Bakery Kitty',
     },
     {
       imgUrl: 'https://placekitten.com/200/300',
-      description: 'Side 3',
+      description: 'Slide 3',
       attribution: 'Tres Factory Kitty',
     },
   ];
