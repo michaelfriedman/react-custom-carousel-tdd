@@ -10,7 +10,8 @@
     "test": "jest --watchAll --coverage",
     "lint": "eslint && prettier-eslint --list-different **/*.js",
     "format": "prettier-eslint --write **/*.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --config webpack.config.js --open"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
@@ -34,6 +35,7 @@
     "prop-types": "^15.7.2",
     "react-dom": "^16.8.6",
     "webpack": "^4.36.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
