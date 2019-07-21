@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import CarouselButton from '../CarouselButton';
 
 describe('Carousel Button', () => {
-  const text = `Button text`;
+  const text = 'Button text';
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(<CarouselButton>{text}</CarouselButton>);

@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "test": "jest --watchAll --coverage",
-    "lint": "eslint && prettier-eslint --list-different **/*.js",
+    "lint:js": "eslint . && prettier-eslint --list-different **/*.js",
+    "lint:css": "stylelint **/*.js",
+    "lint": "yarn run lint:js && yarn run lint:css",
     "format": "prettier-eslint --write **/*.js",
     "build": "webpack --config webpack.config.js",
     "dev": "webpack-dev-server --config webpack.config.js --open"
@@ -17,13 +19,15 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "7.1.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.0.1",
@@ -34,6 +38,10 @@
     "prettier-eslint-cli": "^5.0.0",
     "prop-types": "^15.7.2",
     "react-dom": "^16.8.6",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
